@@ -42,7 +42,7 @@ namespace ConsoleApp1
         [Description("Advance")]
         Platinum
     }
-    public static class Demo2
+    public class Demo2
     {
 
         public static int PI = 3;

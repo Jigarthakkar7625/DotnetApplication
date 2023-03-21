@@ -12,6 +12,7 @@ namespace ConsoleApp1
         public string UserName { get; set; }
 
 
+      
         //public void checkRef(ref Demo2 demo2)
         //{
         //    demo2.UserNameDemo2 = "jigar";
@@ -28,5 +29,10 @@ namespace ConsoleApp1
         //    return 15;
         //    //return a + b;
         //}
+
+        public void GET()
+        {
+
+        }
     }
 }

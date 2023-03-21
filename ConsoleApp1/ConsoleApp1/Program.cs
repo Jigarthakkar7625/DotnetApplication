@@ -3,19 +3,89 @@ using ConsoleApp1;
 using System; //Namespace
 
 
+A a = new A();
+//a.MethodA();
+//a.MethodA(10);
 
-int a = (int)days.Sunday;
+//B objB = new B(); // Object : Initialize
+//objB.MethodA();
 
-Dictionary<string, int> myDic = ((days[])Enum.GetValues(typeof(days))).ToDictionary(k => k.ToString(), v => (int)v);
+// Runtime polymorphism : Method Overriding : Dynamic Binding : Late binding
+// Compile time polymorphism : Method Overloading :Static binding : early binding
+
+IC iC = new IC();
+iC.HelloA(10);
+iC.HelloB(20, 23);
+
+//IA if  = new IA();
 
 
-//var authorLevel = AuthorLevels.Platinum.GetEnumDescription();
 
-//FileStream fileStream = null;
-//try
-//{
+//objB.AUserName();
 
-int[] ints = new int[10];
+
+//Class2 class2 = new Class2();
+//class2.PublicClass();
+
+// 1. Single
+// 2. Multi level inhari
+// 3 hirarchical inh
+// 4. Hybrid inh
+// 5. Multiple inharitance
+
+//Encap /// 
+/// Access modifier : 
+/// 
+
+// public : Acceess anywhere inside project
+// Private : Within { }
+// Protected : Class and inharit class
+// Internal : Current project assembly.
+// Protected  internal : Current project assembly(Parent) + Derive class
+// private protected : class + derive class + Wihin assembly
+
+
+//Inh
+//P
+//A
+//
+//
+
+Class2 Class2 = new Class2();
+
+Class2 = null;
+GC.Collect();
+
+
+//Class2 class2 = new Class2("Jigar", 1);
+//Class2 class3 = new Class2("Jigar1", 2);
+//Class2 class4 = new Class2("Jigar2", 3);
+//Class2 class5 = new Class2("Jigar3", 4);
+//Class2 class6 = new Class2("Jigar4", 5);
+
+
+//Class2 class21 = new Class2(class2);
+
+//Console.WriteLine(class2.userid);
+//Console.WriteLine(class2.username);
+
+//Console.WriteLine(class3.userid);
+//Console.WriteLine(class3.username);
+
+Console.ReadLine();
+
+//int a = (int)days.Sunday;
+
+//Dictionary<string, int> myDic = ((days[])Enum.GetValues(typeof(days))).ToDictionary(k => k.ToString(), v => (int)v);
+
+
+////var authorLevel = AuthorLevels.Platinum.GetEnumDescription();
+
+////FileStream fileStream = null;
+////try
+////{
+
+//int[] ints = new int[10];
 
 //2*2 = 4
 //string[,] ints = new string[3, 3]; // 2D
@@ -35,24 +105,24 @@ int[] ints = new int[10];
 
 
 
-foreach (var item in ints)
-{
-    Console.WriteLine(item);
-}
+//foreach (var item in ints)
+//{
+//    Console.WriteLine(item);
+//}
 
-GET("jigar", "Mehul", true, 1, 10.5, "Nidhi");
-//GET(ints);
+//GET("jigar", "Mehul", true, 1, 10.5, "Nidhi");
+////GET(ints);
 
-//GET1("Jigar", "Nidhi");
+////GET1("Jigar", "Nidhi");
 
-var objects = new object[10];
-objects[0] = "JIgar";
-objects[1] = 1;
-objects[2] = true;
+//var objects = new object[10];
+//objects[0] = "JIgar";
+//objects[1] = 1;
+//objects[2] = true;
 
-Demo2.test();
+//Demo2.test();
 
-Console.WriteLine(Demo2.PI);
+//Console.WriteLine(Demo2.PI);
 
 static void GET(params object[] ints)
 {
