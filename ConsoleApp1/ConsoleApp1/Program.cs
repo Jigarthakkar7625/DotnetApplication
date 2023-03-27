@@ -1,9 +1,351 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp1;
 using System; //Namespace
+using System.Collections;
+using System.Collections.Generic;
 
 
-A a = new A();
+// T => Class // Class : Constructor
+// T => struct // datatypes
+// T => New() // : Constructor :- Parameter less
+// T => <Base class> : Parent Class
+// T => <Interface> : Interface
+// T => U
+
+
+
+
+List<string> list = new List<string>(); // in build
+list.Add("Anisha");
+var a = list.Count;
+
+int? i = null;
+
+
+
+GC_Struct<float> gC_Class12 = new GC_Struct<float>();
+GC_Struct<decimal> gC_Class12e = new GC_Struct<decimal>();
+
+// Class
+//GC_Struct<int> gC_Class = new GC_Struct<int>();
+//gC_Class.Username = 12;
+//gC_Class.GC_Struct_GET(15);
+
+//Partial partial = new Partial();
+//partial.Username = "Jigar";
+
+//Partial partial1 = new Partial();
+//partial1.Username = "Jigar";
+
+//gC_Class.Username = partial;
+//gC_Class.GC_Class_GET(partial1);
+
+
+
+// Class
+GC_Class<Partial> gC_Class = new GC_Class<Partial>(); // Custom
+
+GC_Class<Threading> gC_Class1 = new GC_Class<Threading>(); // Custom
+
+Partial partial = new Partial();
+partial.Username = "Jigar";
+
+Partial partial1 = new Partial();
+partial1.Username = "Jigar";
+
+gC_Class.Username = partial;
+gC_Class.GC_Class_GET(partial1);
+
+
+// NON - G
+
+// Array List
+// Sorted List
+// Stack
+// Queue
+// Hashtable
+
+
+//ArrayList arrayList = new ArrayList();
+//arrayList.Add(true);
+//arrayList.Add(1);  
+//arrayList.Add("Jigar");  
+//arrayList.Add(4.5);  
+//arrayList.Add(null);
+//var a = arrayList.Count;
+
+
+//ArrayList.RemoveAt(0);
+
+//List<demo> demo = new List<demo>();
+//demo.UserName = "";
+
+
+//SortedList List = new SortedList();
+//List.Add(1, "jigar");
+//List.Add(2, true);
+//List.Add(3, 7.5);
+//List.Add(4, 1);
+
+
+//Hashtable hashtable = new Hashtable();
+//hashtable.Add(1, "jigar");
+//hashtable.Add(2, 12);
+//hashtable.Add(3, true);
+//hashtable.Add("jigards", "jigar");
+
+//var a = hashtable[1];
+
+//hashtable.Remove(2);
+//Stack Stack = new Stack();
+//Stack.Push("jigar");
+//Stack.Push(1);
+//Stack.Push(true);
+
+////Stack.Pop();
+//Stack.Peek();
+
+
+////ArrayList.AddRange(demo);
+
+Console.ReadLine();
+
+
+
+
+
+//HashSet<string> strings = new HashSet<string>();
+//strings.Add("Jigar");
+//strings.Add("Mehul");
+//strings.Add("Jigar");
+//strings.Add("Manthan");
+//strings.Add("Jigar");
+//strings.Add("Jigar");
+//strings.Add("Jigar");
+//strings.Add("Jigar");
+//strings.Add("Jigar");
+//strings.Add("Jigar");
+//strings.Add("Jigar");
+//Console.WriteLine(strings);
+
+
+
+//var a = ints.Pop();
+////ints.Dequeue();
+
+//var b = ints.Peek();
+
+//var a = ints.Pop();
+
+
+//Console.WriteLine(ints);
+
+//1.List<t>
+//2. Dictionaty <Key, value>
+//3. SortedList <Key, value>
+//4. Queue<t> : FIFO : 
+//5. Stack<t> : LIFO
+//6. HashSet<t>
+
+//IDictionary<string, string> data = new Dictionary<string, string>() {
+//    {"A","jigar" },
+//    {"B","jigar" },
+//    {"C","jigar2" }
+//};
+
+//SortedList<int,string> list = new SortedList<int, string>();
+//list.Add(4, "Jigar3");
+//list.Add(1, "Jigar");
+//list.Add(3, "Jigar2");
+//list.Add(2, "Jigar1");
+
+//IDictionary<int, string> list1 = new Dictionary<int, string>();
+//list1.Add(4, "Jigar3");
+//list1.Add(1, "Jigar");
+//list1.Add(3, "Jigar2");
+//list1.Add(2, "Jigar1");
+
+
+
+//Console.WriteLine(list);
+//Console.WriteLine(list1);
+
+//foreach (var item in list)
+//{
+//    var a = data.Keys;
+//    foreach (var item1 in a)
+//    {
+//        var c = data[item1];
+
+//    }
+//    var b = data.Values;
+//}
+
+//Console.WriteLine(data);
+
+//1.List<t>
+
+//List<string> strings = new List<string>() 
+//{ 
+//    "JIgar",
+//    "Mehul",
+//    "Anisha",
+//    "fsdf",
+//    "sdf",
+//    "Anisha",
+//    "JIgsdfar",
+//    "Anisha",
+//    "JIgsdfar"
+//};
+
+//var a = strings.Select((x, i) => new { x, i })
+//                  .Where(x => x.x == "Anisha")
+//                  .Select(x => x.i).ToList();
+
+//var a = strings.Contains("jigar22222");
+
+Console.WriteLine("?");
+
+//strings.Add("Jigar");
+//strings.Add("Mehul");
+//strings.Add("Anisha");
+//strings.Add("Jenish");
+//strings.Add("Manthan");
+//strings.Add("Abhisek");
+
+//foreach (var item in strings)
+//{
+//    Console.WriteLine(item);
+//}
+
+List<demo> demoList = new List<demo>();
+
+List<demo> demoList111 = new List<demo>();
+
+demo demo1 = new demo();
+demo1.UserId = 10;
+demo1.UserName = "Jigar";
+demoList.AddRange(demoList111);
+
+demo demo2 = new demo();
+demo2.UserId = 11;
+demo2.UserName = "Mehul";
+demoList.Add(demo2);
+
+
+List<demo> demoList1 = new List<demo>()
+{
+    new demo(){ UserId = 10,UserName = "jigar" },
+    new demo(){ UserId = 11,UserName = "Mehul" }
+};
+
+foreach (var item in demoList1)
+{
+    Console.WriteLine(item.UserId + " - " + item.UserName);
+}
+
+
+//var b = demoList1.Find(x => x.UserId == 10);
+//var c = demoList1.Where(x => x.UserId == 10).ToList();
+
+
+Console.WriteLine("");
+// Non : Generic colletion :
+
+//1. ArrayList
+//2. SortedList
+//3. Stack
+//4. Queue
+//5. Hashtable
+
+
+
+
+
+//Partial partial = new Partial();
+//var c = partial.Username;
+//var b = partial.UserId;
+
+
+//Thread thread = Thread.CurrentThread;
+//thread.Name = "this is my thread";
+//Console.WriteLine(thread.Name);
+
+
+
+//static void myMethod()
+//{
+
+//    //for (int i = 0; i < 10; i++)
+//    //{
+//    Thread thread = Thread.CurrentThread;
+
+//    //if (thread.IsAlive)
+//    //{
+
+//    //}
+
+//    Console.WriteLine(thread.Name);
+//    //Thread.Sleep(100);
+//    //}
+//}
+
+//static void myMethod2()
+//{
+
+//    //for (int i = 0; i < 5; i++)
+//    //{
+//    Thread thread = Thread.CurrentThread;
+//    Console.WriteLine(thread.Name);
+//    //Thread.Sleep(100);
+//    //}
+//}
+
+//Threading threading = new Threading();
+
+//Thread thread1 = new Thread(new ThreadStart(myMethod));
+//Thread thread2 = new Thread(new ThreadStart(myMethod));
+//Thread thread3 = new Thread(new ThreadStart(myMethod));
+
+//thread1.Name = "thread1";
+//thread2.Name = "thread2";
+//thread3.Name = "thread3";
+
+
+
+//thread1.Priority = ThreadPriority.Highest;
+//thread2.Priority = ThreadPriority.Normal;
+//thread3.Priority = ThreadPriority.Lowest;
+
+
+
+//thread3.Start();
+//thread2.Start();
+//thread1.Start();
+
+//thread.Start();
+//thread1.Name = "This is thread 1";
+////thread.Join();
+
+
+//thread2.Start();
+//thread2.Name = "This is thread 2";
+////thread.Join();
+////try
+////{
+////    thread2.Abort();
+////}
+////catch (Exception)
+////{
+////    Console.WriteLine("ERROR");
+////    //throw;
+////}
+
+
+//thread1.Start();
+//thread1.Name = "This is thread 3";
+
+//A a = new A();
 //a.MethodA();
 //a.MethodA(10);
 
@@ -13,9 +355,9 @@ A a = new A();
 // Runtime polymorphism : Method Overriding : Dynamic Binding : Late binding
 // Compile time polymorphism : Method Overloading :Static binding : early binding
 
-IC iC = new IC();
-iC.HelloA(10);
-iC.HelloB(20, 23);
+//IC iC = new IC();
+//iC.HelloA(10);
+//iC.HelloB(20, 23);
 
 //IA if  = new IA();
 

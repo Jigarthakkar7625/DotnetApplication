@@ -68,6 +68,7 @@ namespace ConsoleApp1
 
     interface IB
     {
+
         string HelloB(int a, int b);
     }
 
